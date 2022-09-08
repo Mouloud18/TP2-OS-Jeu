@@ -1,11 +1,12 @@
 
+from re import template
 from flask import Flask, render_template, request, send_file, redirect, url_for, Response, redirect
 from personnage import *
 from compteurEnnemisTues import *
 from fight import *
 from createMob import *
 
-app = Flask(__name__)
+app = Flask(__name__, template_folder='template')
 
 import sys 
 import os
