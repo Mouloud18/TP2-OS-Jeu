@@ -29,7 +29,7 @@ def home():
                 listeVaincus.append(Ennemi)
         
         return render_template('home.html', pseudo=pseudo, compteurkills=compteurkills, listeVaincus=listeVaincus)
-    return render_template('home.hmtl')
+    return render_template('/templates/home.html')
 
 
 if __name__ == "__main__":
