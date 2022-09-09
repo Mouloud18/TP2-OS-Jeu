@@ -4,7 +4,7 @@ from compteurEnnemisTues import *
 from fight import *
 from createMob import *
 
-app = Flask(__name__)
+app = Flask(__name__, template_folder='.')
 
 import sys 
 import os
