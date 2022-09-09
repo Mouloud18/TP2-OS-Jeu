@@ -4,7 +4,7 @@ from compteurEnnemisTues import *
 from fight import *
 from createMob import *
 
-app = Flask(__name__, template_folder='.')
+app = Flask(__name__)
 
 import sys 
 import os
@@ -28,8 +28,8 @@ def home():
                 compteurkills=compteurEnnemisTue(compteurkills)
                 listeVaincus.append(Ennemi)
         
-        return render_template("home.html", pseudo=pseudo, compteurkills=compteurkills, listeVaincus=listeVaincus)
-    return render_template("home.hmtl")
+        return render_template('home.html', pseudo=pseudo, compteurkills=compteurkills, listeVaincus=listeVaincus)
+    return render_template('home.hmtl')
 
 
 if __name__ == "__main__":
