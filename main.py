@@ -26,7 +26,7 @@ def home():
 
             if MonPerso[1] > 0:
                 compteurkills=compteurEnnemisTue(compteurkills)
-                listeVaincus.append(Ennemi)
+                listeVaincus.append(Ennemi[0])
         
         return render_template('/templates/home.html', pseudo=pseudo, compteurkills=compteurkills, listeVaincus=listeVaincus)
     return render_template('/templates/home.html')
