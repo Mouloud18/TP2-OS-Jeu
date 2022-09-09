@@ -28,7 +28,7 @@ def home():
                 compteurkills=compteurEnnemisTue(compteurkills)
                 listeVaincus.append(Ennemi)
         
-        return render_template('home.html', pseudo=pseudo, compteurkills=compteurkills, listeVaincus=listeVaincus)
+        return render_template('/templates/home.html', pseudo=pseudo, compteurkills=compteurkills, listeVaincus=listeVaincus)
     return render_template('/templates/home.html')
 
 
